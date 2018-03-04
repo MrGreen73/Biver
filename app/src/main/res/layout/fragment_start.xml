@@ -10,18 +10,68 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/colorBackgroundStartFragment">
+        android:background="@color/colorBackgroundStartFragment"
+        android:gravity="center_horizontal">
 
         <ImageView
-            android:layout_gravity="center_horizontal"
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:src="@drawable/rocket"/>
 
+
         <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            />
+            android:id="@+id/btnInGoogle"
+            android:layout_width="@dimen/widthBtnStartFragment"
+            android:layout_height="@dimen/heightBtnStartFragment"
+            android:text="@string/btnInGoogleStart"
+            android:textSize="@dimen/btnTextSizeStart"
+            android:padding="@dimen/paddingBtn"
+            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:background="@color/colorBtnStartFragmentGoogle"/>
+
+
+        <Button
+            android:id="@+id/btnInFacebook"
+            android:layout_width="@dimen/widthBtnStartFragment"
+            android:layout_height="@dimen/heightBtnStartFragment"
+            android:text="@string/btnInGoogleStart"
+            android:textSize="@dimen/btnTextSizeStart"
+            android:padding="@dimen/paddingBtn"
+            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:background="@color/colorBtnStartFragmentFacebook"/>
+
+
+        <Button
+            android:id="@+id/btnInTwitter"
+            android:layout_width="@dimen/widthBtnStartFragment"
+            android:layout_height="@dimen/heightBtnStartFragment"
+            android:text="@string/btnInGoogleStart"
+            android:textSize="@dimen/btnTextSizeStart"
+            android:padding="@dimen/paddingBtn"
+            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:background="@color/colorBtnStartFragmentTwitter"/>
+
+
+        <Button
+            android:id="@+id/btnInEmail"
+            android:layout_width="@dimen/widthBtnStartFragment"
+            android:layout_height="@dimen/heightBtnStartFragment"
+            android:text="@string/btnInGoogleStart"
+            android:textSize="@dimen/btnTextSizeStart"
+            android:padding="@dimen/paddingBtn"
+            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:background="@color/colorBtnStartFragmentEmail"/>
+
+
+        <Button
+            android:id="@+id/btnInPhone"
+            android:layout_width="@dimen/widthBtnStartFragment"
+            android:layout_height="@dimen/heightBtnStartFragment"
+            android:text="@string/btnInGoogleStart"
+            android:textSize="@dimen/btnTextSizeStart"
+            android:padding="@dimen/paddingBtn"
+            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:background="@color/colorBtnStartFragmentPhone"/>
 
     </LinearLayout>
 

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Biver</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="btnInGoogleStart">Войти</string>
+    <string name="btnInFacebookStart">Войти</string>
+    <string name="btnInTwitterStart">Войти</string>
+    <string name="btnInEmailStart">Войти</string>
+    <string name="btnInPhoneeStart">Войти</string>
+
 </resources>

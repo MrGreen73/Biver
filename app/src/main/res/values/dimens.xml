@@ -4,4 +4,9 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="text_size">16sp</dimen>
     <dimen name="paddingLayout">10dp</dimen>
+    <dimen name="paddingBtn">15dp</dimen>
+    <dimen name="widthBtnStartFragment">230dp</dimen>
+    <dimen name="heightBtnStartFragment">50dp</dimen>
+    <dimen name="btnTextSizeStart">16sp</dimen>
+    <dimen name="btnMarginVerticalStart">5dp</dimen>
 </resources>
