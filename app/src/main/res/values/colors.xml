@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorBackgroundStartFragment">#FAFAFA</color>
+    <color name="colorBtnStartFragmentGoogle">#FFFFFF</color>
+    <color name="colorBtnStartFragmentFacebook">#3B5998</color>
+    <color name="colorBtnStartFragmentTwitter">#5BAAF4</color>
+    <color name="colorBtnStartFragmentEmail">#D0021B</color>
+    <color name="colorBtnStartFragmentPhone">#43C5A5</color>
 </resources>
