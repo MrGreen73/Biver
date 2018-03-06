@@ -7,13 +7,19 @@
     android:layout_height="match_parent"
     tools:context="com.ivan.biver.controller.StartActivity">
 
-    <include layout="@layout/toolbar"/>
-
     <LinearLayout
-        android:id="@+id/StartContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/StartContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
 
     </LinearLayout>
 

@@ -11,17 +11,10 @@ import com.ivan.biver.view.StartFragment;
 
 public class StartActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
-
-        toolbar = findViewById(R.id.mainToolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Вход");
-
 
         //Переход на стартовый фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();

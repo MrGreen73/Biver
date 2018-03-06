@@ -11,5 +11,6 @@
     <color name="colorBtnStartFragmentPhone">#43C5A5</color>
     <color name="colorGreenPrimaryDark">#00E676</color>
     <color name="colorGreenPrimary">#9EEFAE</color>
-    <color name="colorGreenAccent">#E8F5E9</color>
+    <color name="colorGreenLight">#E8F5E9</color>
+    <color name="colorGreenAccent">#FF4081</color>
 </resources>

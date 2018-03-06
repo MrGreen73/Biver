@@ -10,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.ivan.biver.R;
 import com.ivan.biver.controller.MainActivity;
@@ -17,11 +20,11 @@ import com.ivan.biver.controller.MainActivity;
 
 public class StartFragment extends Fragment {
 
-    Button mSignWithGoogle;
-    Button mSignWithTwitter;
-    Button mSignWithFacebook;
-    Button mSignWithEmail;
-    Button mSignWithPhone;
+    private Button mSignWithTwitter;
+    private Button mSignWithFacebook;
+    private Button mSignWithEmail;
+    private Button mSignWithPhone;
+    private Button mSignWithGoogle;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,6 +32,7 @@ public class StartFragment extends Fragment {
         View v =  inflater.inflate(R.layout.fragment_start, container, false);
 
         mSignWithGoogle = v.findViewById(R.id.btnInGoogle);
+        mSignWithEmail = v.findViewById(R.id.btnInEmail);
 
         mSignWithGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
