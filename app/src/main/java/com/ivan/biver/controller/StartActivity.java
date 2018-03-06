@@ -1,9 +1,12 @@
-package com.ivan.biver;
+package com.ivan.biver.controller;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.ivan.biver.R;
+import com.ivan.biver.view.StartFragment;
 
 public class StartActivity extends AppCompatActivity {
 

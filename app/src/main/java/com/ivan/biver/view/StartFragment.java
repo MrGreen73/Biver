@@ -1,6 +1,7 @@
-package com.ivan.biver;
+package com.ivan.biver.view;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -9,6 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.ivan.biver.R;
+import com.ivan.biver.controller.MainActivity;
 
 
 public class StartFragment extends Fragment {
@@ -30,10 +34,17 @@ public class StartFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Snackbar
-                        .make(v, "Хорошая работа", Snackbar.LENGTH_LONG)
-//                        .setAction("Спасибо", null)
-                        .show();
+                Snackbar snackbar = Snackbar.make(v, "Для перехода нажмите ВХОД", Snackbar.LENGTH_LONG);
+                snackbar.setAction("ВХОД", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent MainActivity = new Intent(getActivity(), MainActivity.class);
+                        startActivity(MainActivity);
+                        getActivity().finish();
+
+                    }
+                }).show();
 
             }
         });
