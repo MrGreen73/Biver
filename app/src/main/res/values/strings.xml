@@ -2,11 +2,11 @@
     <string name="app_name">Biver</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="btnInGoogleStart">Войти</string>
-    <string name="btnInFacebookStart">Войти</string>
-    <string name="btnInTwitterStart">Войти</string>
-    <string name="btnInEmailStart">Войти</string>
-    <string name="btnInPhoneeStart">Войти</string>
+    <string name="btnInGoogleStart">Войти через Google</string>
+    <string name="btnInFacebookStart">Войти через Facebook</string>
+    <string name="btnInTwitterStart">Войти через Twitter</string>
+    <string name="btnInEmailStart">Войти через Email</string>
+    <string name="btnInPhoneStart">Войти</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>

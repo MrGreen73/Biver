@@ -8,5 +8,5 @@
     <dimen name="widthBtnStartFragment">230dp</dimen>
     <dimen name="heightBtnStartFragment">50dp</dimen>
     <dimen name="btnTextSizeStart">16sp</dimen>
-    <dimen name="btnMarginVerticalStart">7dp</dimen>
+    <dimen name="btnMarginVerticalStart">10dp</dimen>
 </resources>

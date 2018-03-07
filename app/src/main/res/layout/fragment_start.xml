@@ -34,7 +34,7 @@
             android:id="@+id/btnInFacebook"
             android:layout_width="@dimen/widthBtnStartFragment"
             android:layout_height="@dimen/heightBtnStartFragment"
-            android:text="@string/btnInGoogleStart"
+            android:text="@string/btnInFacebookStart"
             android:textSize="@dimen/btnTextSizeStart"
             android:padding="@dimen/paddingBtn"
             android:layout_marginTop="@dimen/btnMarginVerticalStart"
@@ -45,7 +45,7 @@
             android:id="@+id/btnInTwitter"
             android:layout_width="@dimen/widthBtnStartFragment"
             android:layout_height="@dimen/heightBtnStartFragment"
-            android:text="@string/btnInGoogleStart"
+            android:text="@string/btnInTwitterStart"
             android:textSize="@dimen/btnTextSizeStart"
             android:padding="@dimen/paddingBtn"
             android:layout_marginTop="@dimen/btnMarginVerticalStart"
@@ -56,21 +56,20 @@
             android:id="@+id/btnInEmail"
             android:layout_width="@dimen/widthBtnStartFragment"
             android:layout_height="@dimen/heightBtnStartFragment"
-            android:text="@string/btnInGoogleStart"
+            android:text="@string/btnInEmailStart"
             android:textSize="@dimen/btnTextSizeStart"
             android:padding="@dimen/paddingBtn"
             android:layout_marginTop="@dimen/btnMarginVerticalStart"
             android:background="@drawable/btn_background_email"/>
 
-
         <Button
-            android:id="@+id/btnInPhone"
+            android:id="@+id/btnLogin"
             android:layout_width="@dimen/widthBtnStartFragment"
             android:layout_height="@dimen/heightBtnStartFragment"
-            android:text="@string/btnInGoogleStart"
+            android:text="@string/btnInPhoneStart"
             android:textSize="@dimen/btnTextSizeStart"
             android:padding="@dimen/paddingBtn"
-            android:layout_marginTop="@dimen/btnMarginVerticalStart"
+            android:layout_marginTop="35dp"
             android:background="@drawable/btn_background_phone"/>
 
     </LinearLayout>
