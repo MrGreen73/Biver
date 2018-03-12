@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Fragment container;
     private Fragment fragment;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+   /* private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
         @Override
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (container == null) {
 
-                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).addToBackStack(null).commit();
 
                     }
                     return true;
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (container == null) {
 
-                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).addToBackStack(null).commit();
 
                     }
                     return true;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
                     if (container == null) {
 
-                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).commit();
+                        fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment).addToBackStack(null).commit();
 
                     }
                     return true;
@@ -71,24 +71,78 @@ public class MainActivity extends AppCompatActivity {
             //store
         }
     };
-
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        Fragment container = fragmentManager.findFragmentById(R.id.mainContainer);
-        Fragment fragment = new StoreFragment();
+        final FragmentManager fragmentManager = getSupportFragmentManager();
+
+        final Fragment container = fragmentManager.findFragmentById(R.id.mainContainer);
+
+        final Fragment fragment = new StoreFragment();
 
         if (container == null) {
 
-            fragmentManager.beginTransaction().add(R.id.mainContainer, fragment).commit();
+            fragmentManager.beginTransaction().add(R.id.mainContainer, fragment).addToBackStack(null).commit();
 
         }
 
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        /*BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+*/
+
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.navigation_store:
+                                //
+                                Toast.makeText(MainActivity.this, "Store", Toast.LENGTH_SHORT).show();
+                                Fragment fragment1 = new StoreFragment();
+
+                                if (container == null) {
+
+                                    fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment1).commit();
+
+                                }
+                                break;
+                            case R.id.navigation_discount:
+                                Toast.makeText(MainActivity.this, "Discount", Toast.LENGTH_SHORT).show();
+
+                                Fragment fragment2 = new DiscountFragment();
+
+                                if (container == null) {
+
+                                    fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment2).commit();
+
+                                }
+
+                                 break;
+                            case R.id.navigation_order:
+                                Toast.makeText(MainActivity.this, "Order", Toast.LENGTH_SHORT).show();
+
+                                Fragment fragment3 = new OrderFragment();
+
+                                if (container == null) {
+
+                                    fragmentManager.beginTransaction().replace(R.id.mainContainer, fragment3).commit();
+
+                                }
+                                //
+                                break;
+                        }
+                        return true;
+                    }
+                });
+
+
     }
 
 }
