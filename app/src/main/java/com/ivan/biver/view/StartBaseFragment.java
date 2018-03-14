@@ -53,6 +53,15 @@ public class StartBaseFragment extends Fragment {
 
         });
 
+        mBtnRegister.setOnClickListener(v123 -> {
+
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.StartContainer, new RegisterFragment())
+                    .addToBackStack(null)
+                    .commit();
+
+        });
+
 
 
         return v;
