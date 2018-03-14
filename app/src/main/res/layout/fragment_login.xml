@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.ivan.biver.view.LoginFragment"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/colorGreenLight">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -56,7 +57,7 @@
                 android:layout_height="wrap_content"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="35dp"
                 android:text="Войти"
                 android:layout_gravity="right"/>
 

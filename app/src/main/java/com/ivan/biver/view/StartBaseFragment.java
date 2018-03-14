@@ -4,6 +4,7 @@ package com.ivan.biver.view;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,7 +29,6 @@ public class StartBaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
 
         View v = inflater.inflate(R.layout.fragment_start_base, container, false);
 
@@ -36,26 +36,21 @@ public class StartBaseFragment extends Fragment {
         mBtnEnterForOrder = v.findViewById(R.id.btnEnterForOrder);
         mBtnRegister = v.findViewById(R.id.btnRegister);
 
-        mBtnEnter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mBtnEnter.setOnClickListener(v12 -> {
 
-                Intent mainIntent = new Intent(getActivity(), MainActivity.class);
-                startActivity(mainIntent);
-                getActivity().finish();
+            Intent mainIntent = new Intent(getActivity(), MainActivity.class);
+            startActivity(mainIntent);
+            getActivity().finish();
 
-            }
         });
 
-        mBtnEnterForOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        mBtnEnterForOrder.setOnClickListener(v1 -> {
 
-                Intent loginIntent = new Intent(getActivity(), LoginActivity.class);
-                startActivity(loginIntent);
-                getActivity().finish();
+            getFragmentManager().beginTransaction()
+                    .replace(R.id.StartContainer, new LoginFragment())
+                    .addToBackStack(null)
+                    .commit();
 
-            }
         });
 
 
