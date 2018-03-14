@@ -1,0 +1,67 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ivan.biver.view.StartBaseFragment"
+    android:orientation="vertical"
+    android:background="@color/colorGreenLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="215dp"
+            android:layout_height="215dp"
+            android:src="@drawable/rocket"
+            android:layout_marginTop="3dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:text="Регистрация"
+                    android:textSize="@dimen/btnTextSizeStart"
+                    android:background="@drawable/btn_background_twitter"/>
+
+                <Button
+                    android:id="@+id/btnEnter"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Войти"
+                    android:textSize="@dimen/btnTextSizeStart"
+                    android:background="@drawable/btn_background_phone"/>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnEnterForOrder"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="Войти для заказа"
+                android:textSize="@dimen/btnTextSizeStart"
+                android:padding="@dimen/paddingBtn"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_background_email"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

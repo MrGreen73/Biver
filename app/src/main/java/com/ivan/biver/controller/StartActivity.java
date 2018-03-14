@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.ivan.biver.R;
+import com.ivan.biver.view.StartBaseFragment;
 import com.ivan.biver.view.StartFragment;
 
 public class StartActivity extends AppCompatActivity {
@@ -44,7 +45,7 @@ public class StartActivity extends AppCompatActivity {
         //Переход на стартовый фрагмент
         FragmentManager fragmentManager = getSupportFragmentManager();
         Fragment container = fragmentManager.findFragmentById(R.id.StartContainer);
-        Fragment fragment = new StartFragment();
+        Fragment fragment = new StartBaseFragment();
 
         if (container == null) {
 
