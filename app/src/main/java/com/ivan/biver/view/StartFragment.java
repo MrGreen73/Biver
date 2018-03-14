@@ -16,6 +16,7 @@ import android.widget.Toolbar;
 
 import com.ivan.biver.R;
 import com.ivan.biver.controller.MainActivity;
+import com.ivan.biver.controller.TestActivity;
 
 
 public class StartFragment extends Fragment {
@@ -70,7 +71,17 @@ public class StartFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                Snackbar.make(v, "Вы хотите войти через Twitter" , Snackbar.LENGTH_LONG).show();
+                Snackbar snackbar = Snackbar.make(v, "Вы хотите войти через Twitter" , Snackbar.LENGTH_LONG);
+                snackbar.setAction("Some girl's", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent testIntent= new Intent(getActivity(), TestActivity.class);
+                        startActivity(testIntent);
+                        getActivity().finish();
+                    }
+                }).show();
+
 
             }
         });
@@ -94,8 +105,8 @@ public class StartFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
 
-                        Intent MainActivity = new Intent(getActivity(), MainActivity.class);
-                        startActivity(MainActivity);
+                        Intent mainIntent = new Intent(getActivity(), MainActivity.class);
+                        startActivity(mainIntent);
                         getActivity().finish();
 
                     }
